@@ -11,3 +11,6 @@ def solution2(statues):
     return max(statues) - min(statues) - len(statues) + 1
 
 solution([6, 2, 3, 8])
+
+def solution3(statues):
+    return sum([1 for i in range(min(statues), max(statues)) if i not in statues])
